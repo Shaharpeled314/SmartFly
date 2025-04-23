@@ -92,8 +92,8 @@ if user_input:
         offers = results.get("data", [])
 
         if offers:
-            answer = "מצאתי עבורך את הטיסות הבאות:
-"
+            answer = "מצאתי עבורך את הטיסות הבאות:"
+
             for offer in offers:
                 seg = offer["itineraries"][0]["segments"][0]
                 dep = seg["departure"]["at"].split("T")[0]
